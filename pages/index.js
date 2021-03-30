@@ -1,65 +1,55 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { styled } from "@stitches/react";
+import { useState } from "react";
+import HeadContainer from "../components/Head.jsx";
+import Nav from "../components/Nav.jsx";
+import Title from "../components/Title.jsx";
+import Contact from "../components/Contact.jsx";
+import Work from "../components/Work.jsx";
+import Blog from "../components/Blog.jsx";
+import Footer from "../components/Footer.jsx";
 
-export default function Home() {
+const Container = styled("div", {
+  fontFamily: `'JetBrains Mono', monospace`,
+  display: "grid",
+  gridTemplateAreas: `'nav nav nav' 'title title title' '. main .' 'footer footer footer'`,
+  gridTemplateColumns: "1fr 5fr 1fr",
+});
+
+const Main = styled("div", {
+  gridArea: "main",
+  display: "flex",
+  justifyContent: "start",
+  alignItems: "start",
+  overflow: "auto",
+  color: "darkslategray",
+  backgroundColor: "white",
+  boxShadow: "1px 2px 8px gainsboro",
+  padding: "1rem",
+});
+
+const Home = () => {
+  const [showContact, setShowContact] = useState(false);
+  const [showWork, setShowWork] = useState(false);
+  const [showBlog, setShowBlog] = useState(false);
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+    <>
+      <HeadContainer />
+      <Container>
+        <Nav
+          setShowBlog={setShowBlog}
+          setShowContact={setShowContact}
+          setShowWork={setShowWork}
+        />
+        <Title />
+        <Main>
+          {showContact && !showWork && <Contact />}
+          {!showContact && showWork && <Work />}
+          {!showContact && !showWork && showBlog && <Blog />}
+        </Main>
+        <Footer />
+      </Container>
+    </>
+  );
+};
+export default Home;
