@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import { global } from "@stitches/react";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const globalStyles = global({
+  body: { margin: 0 },
+});
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => {
+  globalStyles();
+  return <Component {...pageProps} />;
+};
+
+export default MyApp;
