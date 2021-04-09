@@ -19,6 +19,40 @@ export const { theme, css, styled, global, getCssString } = createCss({
       purple400: "hsl(252,75%,84%)",
       purple500: "hsl(252,78%,60%)",
       purple600: "hsl(252,80%,53%)",
+
+      dark: "#2b2d35",
+
+      grey100: "#dddcd3",
+      grey200: "#b9b9b6",
+      grey300: "#9c9e9d",
+      grey400: "#858789",
+      grey500: "#73767c",
+      grey600: "#63676f",
+      grey700: "#575b65",
+      grey800: "#414450",
+      grey900: "#3e3f43",
+
+      blue200: "#5fd1be",
+      blue300: "#5fc0d2",
+      blue400: "#609ad2",
+      blue500: "#629ed9",
+      blue600: "#6074d3",
+      blue700: "#58659d",
+
+      green400: "#b0c87c",
+      green500: "#53bd97",
+      green600: "#4ca585",
+      green700: "#4e8b78",
+
+      yellow400: "#d8c679",
+      yellow500: "#fee787",
+      yellow600: "#dbba7e",
+      yellow700: "#dbba7e",
+
+      red300: "#cea37f",
+      red400: "#d88e79",
+      red500: "#d38676",
+      red600: "#b7776b",
     },
     space: {
       1: "5px",
