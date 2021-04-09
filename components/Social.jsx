@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config.js";
 import * as AccessibleIcon from "@radix-ui/react-accessible-icon";
 import { EnvelopeOpenIcon, CalendarIcon } from "@radix-ui/react-icons";
 import * as Popover from "@radix-ui/react-popover";

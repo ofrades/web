@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config.js";
 import { useState } from "react";
 import HeadContainer from "../components/Head.jsx";
 import Nav from "../components/Nav.jsx";
@@ -18,6 +18,8 @@ const Container = styled("div", {
   'footer footer footer'`,
   gridTemplateColumns: "1fr 5fr 1fr",
   gridTemplateRows: "auto auto 50vh auto",
+  backgroundColor: "$grey800",
+  color: "$yellow500",
 });
 
 const Main = styled("div", {
@@ -26,9 +28,7 @@ const Main = styled("div", {
   justifyContent: "start",
   alignItems: "start",
   overflow: "auto",
-  color: "darkslategray",
-  backgroundColor: "white",
-  boxShadow: "1px 2px 8px gainsboro",
+  boxShadow: "1px 2px 8px $dark",
   padding: "1rem",
   marginBottom: "2rem",
 });

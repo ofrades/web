@@ -1,12 +1,12 @@
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config.js";
 
 const Container = styled("div", {
-  color: "darkslategray",
+  color: "$blue500",
 });
 const Resume = styled("h3", {
   fontFamily: `'JetBrains Mono', monospace`,
   fontWeight: "700",
-  color: "black",
+  color: "$green500",
 });
 const List = styled("ul", {});
 

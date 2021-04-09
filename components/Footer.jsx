@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config.js";
 import Social from "./Social";
 
 const Container = styled("div", {
@@ -8,7 +8,8 @@ const Container = styled("div", {
   alignItems: "center",
   padding: "2rem",
   color: "gainsboro",
-  borderTop: "5px solid gainsboro",
+  backgroundColor: "$green600",
+  borderTop: "5px solid $green700",
 });
 
 const Footer = () => {

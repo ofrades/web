@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config.js";
 
 const Container = styled("div", {
   gridArea: "title",
@@ -10,7 +10,7 @@ const Container = styled("div", {
 const TitleHero = styled("h1", {
   fontFamily: `'JetBrains Mono', monospace`,
   fontWeight: "700",
-  color: "black",
+  color: "$grey500",
   fontSize: "4rem",
 });
 
@@ -18,13 +18,13 @@ const TitleText = styled("h3", {
   fontFamily: `'JetBrains Mono', monospace`,
   fontWeight: "200",
   fontStyle: "italic",
-  color: "slategray",
+  color: "$grey200",
 });
 
 const Text = styled("h3", {
   fontFamily: `sans-serif`,
   fontWeight: "200",
-  color: "darkslategrayy",
+  color: "$grey300",
 });
 
 const Title = () => {

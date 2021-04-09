@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config.js";
 import * as Toolbar from "@radix-ui/react-toolbar";
 
 const Container = styled(Toolbar.Root, {
@@ -13,16 +13,16 @@ const Button = styled(Toolbar.Button, {
   fontSize: "1.25rem",
   padding: "1rem",
   width: "100%",
-  backgroundColor: "white",
-  color: "gainsboro",
+  backgroundColor: "$grey900",
+  color: "$green500",
   border: "none",
   cursor: "pointer",
   "&:hover": {
-    color: "darkslategray",
+    color: "$green600",
   },
   "&:focus": {
     outline: "0",
-    color: "darkslategray",
+    color: "$yellow500",
   },
 });
 
