@@ -11,8 +11,13 @@ import Footer from "../components/Footer.jsx";
 const Container = styled("div", {
   fontFamily: `'JetBrains Mono', monospace`,
   display: "grid",
-  gridTemplateAreas: `'nav nav nav' 'title title title' '. main .' 'footer footer footer'`,
+  gridTemplateAreas: `
+  'nav nav nav'
+  'title title title'
+  '. main .'
+  'footer footer footer'`,
   gridTemplateColumns: "1fr 5fr 1fr",
+  gridTemplateRows: "auto auto 50vh auto",
 });
 
 const Main = styled("div", {
@@ -25,6 +30,7 @@ const Main = styled("div", {
   backgroundColor: "white",
   boxShadow: "1px 2px 8px gainsboro",
   padding: "1rem",
+  marginBottom: "2rem",
 });
 
 const Home = () => {
@@ -43,9 +49,9 @@ const Home = () => {
         />
         <Title />
         <Main>
-          {showContact && !showWork && <Contact />}
-          {!showContact && showWork && <Work />}
-          {!showContact && !showWork && showBlog && <Blog />}
+          {showContact && <Contact />}
+          {showWork && <Work />}
+          {showBlog && <Blog />}
         </Main>
         <Footer />
       </Container>

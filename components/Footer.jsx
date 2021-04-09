@@ -1,10 +1,7 @@
 import { styled } from "@stitches/react";
+import Social from "./Social";
 
 const Container = styled("div", {
-  position: "fixed",
-  left: "0",
-  right: "0",
-  bottom: "0",
   gridArea: "footer",
   display: "flex",
   justifyContent: "center",
@@ -18,6 +15,7 @@ const Footer = () => {
   return (
     <Container>
       <p>Thanks</p>
+      <Social />
     </Container>
   );
 };
