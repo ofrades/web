@@ -4,17 +4,25 @@ const Container = styled("div", {
   color: "$blue500",
 });
 
-const TitleText = styled("h3", {
+const Title = styled("a", {
   fontFamily: `'JetBrains Mono', monospace`,
-  fontWeight: "200",
   fontStyle: "italic",
   color: "$green500",
 });
+const Text = styled("h3", {
+  fontFamily: `'Cardo', sans-serif`,
+  color: "$blue500",
+});
 
-const Blog = ({ posts, children }) => {
+const Blog = ({ posts }) => {
   return (
     <Container>
-      <TitleText>{posts}</TitleText>
+      {posts.map((post) => (
+        <div key={post.meta.title}>
+          <Title href={`blog/${post.slug}`}>{post.meta.title}</Title>
+          <Text>{post.meta.description}</Text>
+        </div>
+      ))}
     </Container>
   );
 };

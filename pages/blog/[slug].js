@@ -4,13 +4,14 @@ import MarkdownHighlight from "../../components/MarkdownHighlight";
 import { getAllPosts, getPageContentBySlug } from "../../lib/markdown";
 
 const Slug = ({ page }) => {
+  console.log(page);
   const router = new useRouter();
   return router.isFallback ? (
     <div>Loading...</div>
   ) : (
     <div>
-      <h1>{page.title}</h1>
-      <h2>{page.description}</h2>
+      <h1>{page.meta.title}</h1>
+      <h2>{page.meta.description}</h2>
       <ReactMarkdown
         source={page.content}
         renderers={{
