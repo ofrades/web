@@ -6,6 +6,7 @@ import Title from "../components/Title.jsx";
 import Contact from "../components/Contact.jsx";
 import Work from "../components/Work.jsx";
 import Blog from "../components/Blog.jsx";
+import { getAllPosts } from "../lib/markdown";
 import Footer from "../components/Footer.jsx";
 
 const Container = styled("div", {
@@ -33,7 +34,7 @@ const Main = styled("div", {
   marginBottom: "2rem",
 });
 
-const Home = () => {
+const Home = ({ posts }) => {
   const [showContact, setShowContact] = useState(false);
   const [showWork, setShowWork] = useState(false);
   const [showBlog, setShowBlog] = useState(false);
@@ -51,7 +52,7 @@ const Home = () => {
         <Main>
           {showContact && <Contact />}
           {showWork && <Work />}
-          {showBlog && <Blog />}
+          {showBlog && <Blog posts={posts} />}
         </Main>
         <Footer />
       </Container>
@@ -59,3 +60,8 @@ const Home = () => {
   );
 };
 export default Home;
+
+export async function getStaticProps() {
+  const posts = getAllPosts();
+  return { props: { posts } };
+}

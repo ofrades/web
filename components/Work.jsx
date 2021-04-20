@@ -3,29 +3,35 @@ import { styled } from "../stitches.config.js";
 const Container = styled("div", {
   color: "$blue500",
 });
-const Resume = styled("h3", {
-  fontFamily: `'JetBrains Mono', monospace`,
-  fontWeight: "700",
-  color: "$green500",
+const Resume = styled("div", {});
+
+const Line = styled("h1", {
+  fontFamily: `'Cardo', sans-serif`,
+  color: "$blue500",
 });
-const List = styled("ul", {});
+
+const List = styled("ul", {
+  fontFamily: `'JetBrains Mono', monospace`,
+  color: "$grey300",
+});
 
 const Work = () => {
   return (
     <Container>
       <Resume>
-        Previously I have built apps for Vodafone, Orange, Governamental
-        applications, Monitar, Amplifica
-        <h5>With awesome technologies:</h5>
+        <Line>
+          Software engineer having fun learning web development and building
+          apps
+        </Line>
+        <List>
+          <li>Languages: Javascript, TypeScript, C#, Rust</li>
+          <li>Frameworks/libs: React, Vue, wasm with Rust and C#(Blazor).</li>
+        </List>
+        <Line>
+          I have built apps for Vodafone, Orange, Governamental applications,
+          Monitar, AmplificA
+        </Line>
       </Resume>
-      <List>
-        <li>React</li>
-        <li>Vue</li>
-        <li>Angular</li>
-        <li>Blazor</li>
-        <li>Html</li>
-        <li>Css</li>
-      </List>
     </Container>
   );
 };

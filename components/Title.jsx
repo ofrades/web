@@ -8,7 +8,7 @@ const Container = styled("div", {
 });
 
 const TitleHero = styled("h1", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: `'Cardo', sans-serif`,
   fontWeight: "700",
   color: "$grey500",
   fontSize: "4rem",
@@ -22,7 +22,7 @@ const TitleText = styled("h3", {
 });
 
 const Text = styled("h3", {
-  fontFamily: `sans-serif`,
+  fontFamily: `'Cardo', sans-serif`,
   fontWeight: "200",
   color: "$grey300",
 });

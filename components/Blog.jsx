@@ -11,12 +11,10 @@ const TitleText = styled("h3", {
   color: "$green500",
 });
 
-const Blog = () => {
+const Blog = ({ posts, children }) => {
   return (
     <Container>
-      <TitleText>
-        Comming soon: (react.js, frontend, neovim, linux, terminal)
-      </TitleText>
+      <TitleText>{posts}</TitleText>
     </Container>
   );
 };

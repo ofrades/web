@@ -16,6 +16,7 @@ const Button = styled(Toolbar.Button, {
   backgroundColor: "$grey900",
   color: "$green500",
   border: "none",
+  borderBottom: "5px solid $dark",
   cursor: "pointer",
   "&:hover": {
     color: "$green600",

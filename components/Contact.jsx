@@ -4,21 +4,29 @@ const Container = styled("div", {
   color: "$blue500",
 });
 
-const TitleText = styled("h3", {
-  fontFamily: `'JetBrains Mono', monospace`,
-  fontWeight: "200",
-  fontStyle: "italic",
-  color: "$green500",
+const Button = styled("a", {
+  padding: "1rem",
+  marginRight: "1rem",
+  backgroundColor: "$grey100",
+  color: "$blue500",
+  textDecoration: "none",
+  "&:hover": {
+    backgroundColor: "$grey800",
+    border: "2px solid $blue500",
+    color: "$green600",
+  },
+});
+
+const Line = styled("h1", {
+  fontFamily: `'Cardo', sans-serif`,
+  color: "$blue500",
 });
 
 const Contact = () => {
   return (
     <Container>
-      <TitleText css={{ margin: "1rem" }}>If you want to talk:</TitleText>
-      <ul>
-        <li>We can arrange an 30 min talk</li>
-        <li>Or you can pass by my address</li>
-      </ul>
+      <Line>We can always arrange an 30 min talk</Line>
+      <Button href="mailto:miguel@ofrades.com">Let's talk</Button>
     </Container>
   );
 };

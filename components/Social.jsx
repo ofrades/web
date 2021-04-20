@@ -1,24 +1,25 @@
-import React from "react";
 import { styled } from "../stitches.config.js";
 import * as AccessibleIcon from "@radix-ui/react-accessible-icon";
-import { EnvelopeOpenIcon, CalendarIcon } from "@radix-ui/react-icons";
+import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import * as Popover from "@radix-ui/react-popover";
 
 const StyledTrigger = styled(Popover.Trigger, {
-  backgroundColor: "gainsboro",
+  backgroundColor: "$green600",
+  color: "$grey800",
   border: "none",
+  cursor: "pointer",
 });
 
 const StyledContent = styled(Popover.Content, {
   borderRadius: 3,
   padding: "20px",
   fontSize: 14,
-  backgroundColor: "gainsboro",
-  color: "black",
+  backgroundColor: "$grey800",
+  color: "$grey100",
 });
 
 const StyledArrow = styled(Popover.Arrow, {
-  fill: "gainsboro",
+  fill: "$dark",
 });
 
 const Container = styled("div", {
@@ -44,9 +45,6 @@ const Social = () => {
           <StyledArrow />
         </StyledContent>
       </Popover.Root>
-      <AccessibleIcon.Root label="Calendar">
-        <CalendarIcon />
-      </AccessibleIcon.Root>
     </Container>
   );
 };

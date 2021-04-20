@@ -7,7 +7,7 @@ const Container = styled("div", {
   justifyContent: "center",
   alignItems: "center",
   padding: "2rem",
-  color: "gainsboro",
+  color: "$grey800",
   backgroundColor: "$green600",
   borderTop: "5px solid $green700",
 });
@@ -15,7 +15,6 @@ const Container = styled("div", {
 const Footer = () => {
   return (
     <Container>
-      <p>Thanks</p>
       <Social />
     </Container>
   );
