@@ -3,6 +3,13 @@ import { styled } from "../stitches.config.js";
 const Container = styled("div", {
   color: "$blue500",
 });
+
+const Title = styled("h1", {
+  fontFamily: `'JetBrains Mono', monospace`,
+  fontStyle: "italic",
+  color: "$red500",
+});
+
 const Resume = styled("div", {});
 
 const Line = styled("h1", {
@@ -19,6 +26,7 @@ const Work = () => {
   return (
     <Container>
       <Resume>
+        <Title>My journey</Title>
         <Line>
           Software engineer having fun learning web development and building
           apps

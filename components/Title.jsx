@@ -14,25 +14,10 @@ const TitleHero = styled("h1", {
   fontSize: "4rem",
 });
 
-const TitleText = styled("h3", {
-  fontFamily: `'JetBrains Mono', monospace`,
-  fontWeight: "200",
-  fontStyle: "italic",
-  color: "$grey200",
-});
-
-const Text = styled("h3", {
-  fontFamily: `'Cardo', sans-serif`,
-  fontWeight: "200",
-  color: "$grey300",
-});
-
 const Title = () => {
   return (
     <Container>
       <TitleHero>ofrades</TitleHero>
-      <TitleText>web developer</TitleText>
-      <Text>carving fast and scalable web apps</Text>
     </Container>
   );
 };

@@ -2,8 +2,11 @@ import { styled } from "../stitches.config.js";
 import Social from "./Social";
 
 const Container = styled("div", {
-  gridArea: "footer",
+  position: "fixed",
+  bottom: "0",
   display: "flex",
+  width: "100%",
+  height: "1rem",
   justifyContent: "center",
   alignItems: "center",
   padding: "2rem",

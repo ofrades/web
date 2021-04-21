@@ -3,25 +3,7 @@ import { createCss } from "@stitches/react";
 export const { theme, css, styled, global, getCssString } = createCss({
   theme: {
     colors: {
-      hiContrast: "hsl(206,10%,5%)",
-      loContrast: "white",
-
-      gray100: "hsl(206,22%,99%)",
-      gray200: "hsl(206,12%,97%)",
-      gray300: "hsl(206,11%,92%)",
-      gray400: "hsl(206,10%,84%)",
-      gray500: "hsl(206,10%,76%)",
-      gray600: "hsl(206,10%,44%)",
-
-      purple100: "hsl(252,100%,99%)",
-      purple200: "hsl(252,100%,98%)",
-      purple300: "hsl(252,100%,94%)",
-      purple400: "hsl(252,75%,84%)",
-      purple500: "hsl(252,78%,60%)",
-      purple600: "hsl(252,80%,53%)",
-
       dark: "#2b2d35",
-
       grey100: "#dddcd3",
       grey200: "#b9b9b6",
       grey300: "#9c9e9d",
@@ -31,24 +13,20 @@ export const { theme, css, styled, global, getCssString } = createCss({
       grey700: "#575b65",
       grey800: "#414450",
       grey900: "#3e3f43",
-
       blue200: "#5fd1be",
       blue300: "#5fc0d2",
       blue400: "#609ad2",
       blue500: "#629ed9",
       blue600: "#6074d3",
       blue700: "#58659d",
-
       green400: "#b0c87c",
       green500: "#53bd97",
       green600: "#4ca585",
       green700: "#4e8b78",
-
       yellow400: "#d8c679",
       yellow500: "#fee787",
       yellow600: "#dbba7e",
       yellow700: "#dbba7e",
-
       red300: "#cea37f",
       red400: "#d88e79",
       red500: "#d38676",

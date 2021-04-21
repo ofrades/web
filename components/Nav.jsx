@@ -1,5 +1,6 @@
 import { styled } from "../stitches.config.js";
 import * as Toolbar from "@radix-ui/react-toolbar";
+import { useRouter } from "next/router";
 
 const Container = styled(Toolbar.Root, {
   gridArea: "nav",
@@ -27,29 +28,55 @@ const Button = styled(Toolbar.Button, {
   },
 });
 
-const Nav = ({ setShowBlog, setShowContact, setShowWork }) => {
+const Nav = ({
+  setShowBlog,
+  setShowContact,
+  setShowWork,
+  showSlug,
+  setShowSlug,
+}) => {
+  const router = useRouter();
   const handleContact = () => {
     setShowContact(true);
     setShowWork(false);
     setShowBlog(false);
+    setShowSlug(false);
+    router.push("/");
   };
 
   const handleWork = () => {
     setShowWork(true);
     setShowContact(false);
     setShowBlog(false);
+    setShowSlug(false);
+    router.push("/");
   };
 
   const handleBlog = () => {
     setShowBlog(true);
     setShowContact(false);
     setShowWork(false);
+    setShowSlug(false);
+    router.push("/");
+  };
+  const handleSlug = () => {
+    setShowSlug(true);
+    setShowBlog(false);
+    setShowContact(false);
+    setShowWork(false);
+    router.push("/");
   };
   return (
     <Container>
-      <Button onClick={handleContact}>Contact</Button>
-      <Button onClick={handleWork}>Work</Button>
-      <Button onClick={handleBlog}>Blog</Button>
+      {!showSlug ? (
+        <>
+          <Button onClick={handleContact}>Contact</Button>
+          <Button onClick={handleWork}>Work</Button>
+          <Button onClick={handleBlog}>Blog</Button>
+        </>
+      ) : (
+        <Button onClick={handleSlug}>Back</Button>
+      )}
     </Container>
   );
 };

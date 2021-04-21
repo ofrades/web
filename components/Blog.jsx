@@ -4,12 +4,19 @@ const Container = styled("div", {
   color: "$blue500",
 });
 
-const Title = styled("a", {
+const Title = styled("h1", {
+  fontFamily: `'JetBrains Mono', monospace`,
+  fontStyle: "italic",
+  color: "$red500",
+});
+
+const PostTitle = styled("a", {
   fontFamily: `'JetBrains Mono', monospace`,
   fontStyle: "italic",
   color: "$green500",
 });
-const Text = styled("h3", {
+
+const PostDescription = styled("h3", {
   fontFamily: `'Cardo', sans-serif`,
   color: "$blue500",
 });
@@ -17,11 +24,16 @@ const Text = styled("h3", {
 const Blog = ({ posts }) => {
   return (
     <Container>
+      <Title>My day to day task rumblings</Title>
       {posts.map((post) => (
-        <div key={post.meta.title}>
-          <Title href={`blog/${post.slug}`}>{post.meta.title}</Title>
-          <Text>{post.meta.description}</Text>
-        </div>
+        <>
+          <PostTitle href={`blog/${post.slug}`} key={post.meta.title}>
+            {post.meta.title}
+          </PostTitle>
+          <PostDescription key={post.meta.description}>
+            {post.meta.description}
+          </PostDescription>
+        </>
       ))}
     </Container>
   );

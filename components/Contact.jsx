@@ -4,6 +4,12 @@ const Container = styled("div", {
   color: "$blue500",
 });
 
+const Title = styled("h1", {
+  fontFamily: `'JetBrains Mono', monospace`,
+  fontStyle: "italic",
+  color: "$red500",
+});
+
 const Button = styled("a", {
   padding: "1rem",
   marginRight: "1rem",
@@ -25,6 +31,7 @@ const Line = styled("h1", {
 const Contact = () => {
   return (
     <Container>
+      <Title>Chat</Title>
       <Line>We can always arrange an 30 min talk</Line>
       <Button href="mailto:miguel@ofrades.com">Let's talk</Button>
     </Container>
