@@ -27,7 +27,6 @@ const Container = styled("div", {
   justifyContent: "center",
   alignItems: "center",
   margin: "1rem",
-  "& svg": { margin: "1rem" },
 });
 
 const Social = () => {

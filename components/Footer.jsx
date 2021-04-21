@@ -9,7 +9,7 @@ const Container = styled("div", {
   height: "1rem",
   justifyContent: "center",
   alignItems: "center",
-  padding: "2rem",
+  padding: "1rem 0",
   color: "$grey800",
   backgroundColor: "$green600",
   borderTop: "5px solid $green700",

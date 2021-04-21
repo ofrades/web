@@ -43,7 +43,7 @@ const Layout = ({ posts, children }) => {
   const [showContact, setShowContact] = useState(false);
   const [showWork, setShowWork] = useState(false);
   const [showBlog, setShowBlog] = useState(false);
-  const [showSlug, setShowSlug] = useState(children?.length);
+  const [showSlug, setShowSlug] = useState(children);
 
   globalStyles();
   return (
