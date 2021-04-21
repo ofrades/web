@@ -5,7 +5,7 @@ description: "The what's and why's of my setup"
 
 ## Background
 
-My first computer was a windows 95 I guess, and was just when I was graduating
+My first computer ⌨️ was a windows 95 I guess, and was just when I was graduating
 in a design related course that I first changed operating system. I fell for
 the apple wonderfull laptops poison. It was great, but expensive, and after
 that I used windows again, windows 8, until I changed career from 3D/desgin to
@@ -55,27 +55,27 @@ looked like was the best solution.
 [Pop!_Os](https://pop.system76.com/) is built on top of Ubuntu, which is very
 stable. And gives a very nice out of the box window manager which works as
 expected. Uses Gnome which is huge, but works well with messy things I had in
-my arch setup like wifi and printers.
+my arch setup like wifi and printers 🥣.
 
 I created a
 [script](https://github.com/ofrades/configs/blob/master/install-essential.sh)
-which install everything I need to start working in a new machine. If for some
+which install everything I need to start working in a new machine fast. If for some
 reason I need to start again, install a new ubuntu distro or change my machine
-I just need to download my
-[script](https://github.com/ofrades/configs/blob/master/install-essential.sh),
-run it `sh ~/configs/install-essential.sh` and I am good to go.
+I just need to clone my 
+[dotfiles](https://github.com/ofrades/configs) and run
+`sh ~/configs/install-essential.sh` and I am good to go 🚀.
 
-I use [neovim](https://github.com/neovim/neovim) as my editor, Javascript
+The script installs [neovim](https://github.com/neovim/neovim) as my editor, Javascript
 related projects will need node, npm, yarn, language server protocols for web
-development. I use the [kitty](https://sw.kovidgoyal.net/kitty/index.html)
-terminal and the [fish](https://fishshell.com/) shell and the
-[starship](https://starship.rs/) prompt. Before I was using
-[zsh](https://www.zsh.org/) but I was using it with
-[plugins](https://github.com/ohmyzsh) and fish gives me the same with no
+development, all there. I use the [kitty](https://sw.kovidgoyal.net/kitty/index.html)
+terminal, the [fish](https://fishshell.com/) shell and the
+[starship](https://starship.rs/) prompt. I was using
+[zsh](https://www.zsh.org/) but more stuff to manage,
+[plugins](https://github.com/ohmyzsh)! and fish gives me the same with no
 plugins, and I like that, less things to install and control.
 
-All this and my [configs](https://github.com/ofrades/configs) are done once the
-script runs, I create a bare git repo where I link all my configs and I can
+All this and my [configs](https://github.com/ofrades/configs), colors, etc... are done once the
+script runs, creates a bare git repo where I link all my configs and I can
 edit and manage them easily. Now I only have to keep an eye in my neovim configs,
-everything else is managed automagically, and I can be more productive.
+everything else is managed automagically, and I can be more productive and sane 😁.
 
