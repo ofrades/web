@@ -1,6 +1,7 @@
 ---
 title: "Distro"
 description: "The what's and why's of my setup"
+date: "22-04-2021"
 ---
 
 ## Background
