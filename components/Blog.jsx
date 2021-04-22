@@ -1,4 +1,5 @@
 import { styled } from "../stitches.config.js";
+import Separator from "./Separator";
 
 const Container = styled("div", {
   color: "$blue500",
@@ -13,6 +14,7 @@ const Title = styled("h1", {
 const Post = styled("div", {
   backgroundColor: "$dark",
   padding: "0.3rem 1rem",
+  margin: "1rem 0",
   "& a": {
     textDecoration: "none",
   },
@@ -57,6 +59,7 @@ const Blog = ({ posts }) => {
               </PostTitle>
               <PostDate>🗓️ {post.meta.date}</PostDate>
             </Box>
+            <Separator />
             <PostDescription key={post.meta.description}>
               Description: {post.meta.description}
             </PostDescription>
