@@ -1,6 +1,6 @@
 ---
 title: "Editor to rule them all"
-description: "My emperial editor"
+description: "My imperial editor"
 date: "23-04-2021"
 ---
 
