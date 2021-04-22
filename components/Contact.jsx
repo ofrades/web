@@ -10,12 +10,19 @@ const Title = styled("h1", {
   color: "$red500",
 });
 
+const Box = styled("div", {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+});
+
 const Button = styled("a", {
   padding: "1rem",
-  marginRight: "1rem",
+  margin: "1rem",
   backgroundColor: "$grey100",
   color: "$blue500",
   textDecoration: "none",
+  border: "2px solid transparent",
   "&:hover": {
     backgroundColor: "$grey800",
     border: "2px solid $blue500",
@@ -26,14 +33,17 @@ const Button = styled("a", {
 const Line = styled("h1", {
   fontFamily: `'Cardo', sans-serif`,
   color: "$blue500",
+  padding: "1rem",
 });
 
 const Contact = () => {
   return (
     <Container>
-      <Title>Chat</Title>
-      <Line>We can always arrange an 30 min talk</Line>
-      <Button href="mailto:miguel@ofrades.com">Let's talk</Button>
+      <Title>📮 Chat</Title>
+      <Box>
+        <Button href="mailto:miguel@ofrades.com">🖋️ Let's talk</Button>
+        <Line>We can always arrange an 30 min talk</Line>
+      </Box>
     </Container>
   );
 };

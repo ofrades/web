@@ -10,14 +10,14 @@ const Container = styled("div", {
 const TitleHero = styled("h1", {
   fontFamily: `'Cardo', sans-serif`,
   fontWeight: "700",
-  color: "$grey500",
+  color: "$grey200",
   fontSize: "4rem",
 });
 
 const Title = () => {
   return (
     <Container>
-      <TitleHero>ofrades</TitleHero>
+      <TitleHero>🔭 ofrades</TitleHero>
     </Container>
   );
 };

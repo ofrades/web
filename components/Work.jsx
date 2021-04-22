@@ -26,7 +26,7 @@ const Work = () => {
   return (
     <Container>
       <Resume>
-        <Title>My journey</Title>
+        <Title>💼 My journey</Title>
         <Line>
           Software engineer having fun learning web development and building
           apps

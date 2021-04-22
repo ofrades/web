@@ -11,15 +11,26 @@ const Markdown = styled("div", {
     color: "$red500",
     textAlign: "center",
   },
-  "& h2": { fontFamily: `'Cardo', sans-serif` },
-  "& h3": { fontFamily: `'Cardo', sans-serif` },
-  "& h4": { fontFamily: `'Cardo', sans-serif` },
-  "& h5": { fontFamily: `'Cardo', sans-serif` },
-  "& h6": { fontFamily: `'Cardo', sans-serif` },
-  "& p": { color: "$yellow400" },
+  "& h2": { fontFamily: `'Cardo', sans-serif`, color: "$grey100" },
+  "& h3": { fontFamily: `'Cardo', sans-serif`, color: "$grey200" },
+  "& h4": { fontFamily: `'Cardo', sans-serif`, color: "$grey300" },
+  "& h5": { fontFamily: `'Cardo', sans-serif`, color: "$grey400" },
+  "& h6": {
+    fontFamily: `'JetBrains Mono', monospace`,
+    color: "$grey500",
+    textAlign: "right",
+  },
   "& ul": { color: "$blue400" },
   "& li": { color: "$blue500" },
   "& a": { color: "$green500" },
+});
+
+const Box = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  flexWrap: "wrap",
+  justifyContent: "space-around",
+  backgroundColor: "$dark",
 });
 
 const Slug = ({ page }) => {
@@ -29,8 +40,11 @@ const Slug = ({ page }) => {
   ) : (
     <Layout>
       <Markdown>
-        <h1>{page.meta.title}</h1>
-        <h2>{page.meta.description}</h2>
+        <Box>
+          <h1>{page.meta.title}</h1>
+          <h2>{page.meta.description}</h2>
+          <h6>🗓️ {page.meta.date}</h6>
+        </Box>
         <ReactMarkdown source={page.content} />
       </Markdown>
     </Layout>

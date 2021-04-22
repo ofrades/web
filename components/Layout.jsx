@@ -22,7 +22,7 @@ const Container = styled("div", {
   'title title title'
   'main main main'`,
   gridTemplateColumns: "1fr 5fr 1fr",
-  gridTemplateRows: "5rem 10rem auto",
+  gridTemplateRows: "5rem 8rem auto",
   backgroundColor: "$grey800",
   color: "$yellow500",
 });
