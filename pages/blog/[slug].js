@@ -23,6 +23,10 @@ const Markdown = styled("div", {
   "& ul": { color: "$blue400" },
   "& li": { color: "$blue500" },
   "& a": { color: "$green500" },
+  "& code": {
+    color: "$grey300",
+    backgroundColor: "$grey900",
+  },
 });
 
 const Box = styled("div", {
