@@ -7,7 +7,7 @@ date: "23-04-2021"
 ## Some Background
 
 I was first introduced to the world of editors when my wife asked me to install
-emacs for her's science studies and I was a bit choked of how old looking it was
+emacs for hers science studies and I was a bit choked of how old looking it was
 compared to what I thought was and editor. Why not just use Microsoft Word 😁 or
 something instead of that crap, I thought. I had almost no knowledge of
 programming, the things I did at that time was in dreamweaver and flash, and I
@@ -26,7 +26,7 @@ What made me follow a different path was a bit mysterious, is that kind of thing
 difficult to explain, you see something and you feel you can live without it.
 The first time I saw a professor of mine moving through some folders in the
 terminal and opening a file, edit it, jump out of the file and start going back
-and forward again through the folders I was poisened. There was no turning back.
+and forward again through the folders I was poisoned. There was no turning back.
 
 ### Vim
 
@@ -47,7 +47,7 @@ But with time I started to get annoyed with the vim extension being slow with
 simple task as scrolling a file. And the love for the terminal and with doing
 everything in one place got the better of me and I started configuring the vimrc.
 
-Was when I discoverd that vscode just gives you a lot out of the box and to have
+Was when I discovered that vscode just gives you a lot out of the box and to have
 the same in vim you will need plugins like
 [coc](https://github.com/neoclide/coc.nvim).
 I used it and really enjoyed, searching was great, lsp perfect, configuration
@@ -67,7 +67,7 @@ for source control, managing merge conflicts etc...
 
 ### Neovim
 
-So I jumped to the native neovim lsp when the neovim core team started addinG
+So I jumped to the native neovim lsp when the neovim core team started adding
 lsp natively in the nightly builds and moving things to lua, which I was
 familiar because of latex.
 

@@ -8,7 +8,7 @@ date: "22-04-2021"
 
 My first computer ⌨️ was a windows 95 I guess, and was just when I was graduating
 in a design related course that I first changed operating system. I fell for
-the apple wonderfull laptops poison. It was great, but expensive, and after
+the apple wonderful laptops poison. It was great, but expensive, and after
 that I used windows again, windows 8, until I changed career from 3D/desgin to
 software engineering and fell again, this time for, less expensive, an used
 macbook air, bought on ebay, which was great until coffee joined the party and
