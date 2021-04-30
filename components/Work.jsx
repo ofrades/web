@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { styled } from "../stitches.config.js";
 
 const Container = styled("div", {
@@ -20,6 +21,12 @@ const Line = styled("h1", {
 const List = styled("ul", {
   fontFamily: "$mono",
   color: "$grey300",
+  "& a": {
+    color: "$blue500",
+  },
+  "& em": {
+    color: "$yellow500",
+  },
 });
 
 const Work = () => {
@@ -33,11 +40,38 @@ const Work = () => {
         </Line>
         <List>
           <li>Languages: Javascript, TypeScript, C#, Rust</li>
-          <li>Frameworks/libs: React, Vue, wasm with Rust and C#(Blazor).</li>
+          <li>
+            Frameworks/libs: ❤️ React, Vue, wasm with Rust and C#(Blazor).
+          </li>
+        </List>
+        <List>
+          <em>React.js / Next.js</em>
+          <li>
+            Weather app:{" "}
+            <Link href="https://ofrades-weather.vercel.app">Weather</Link>
+          </li>
+          <li>
+            Search tweets from users:{" "}
+            <Link href="https://gentle.vercel.app">Gentle</Link>
+          </li>
+          <em>Blazor</em>
+          <li>
+            Online book shop:{" "}
+            <Link href="http://offic.herokuapp.com">Bootra</Link>
+          </li>
+          <li>
+            Online text editor to interact with github files:{" "}
+            <Link href="http://bootra.herokuapp.com">Offic</Link>
+          </li>
+          <em>Vanilla</em>
+          <li>
+            Where the journey started:{" "}
+            <Link href="https://tesourofieis.com">Tesouro dos Fiéis</Link>
+          </li>
         </List>
         <Line>
-          I have built apps for Vodafone, Orange, Governamental applications,
-          Monitar, AmplificA
+          I have also built pro apps for Vodafone, Orange, Governamental
+          applications, Monitar, AmplificA
         </Line>
       </Resume>
     </Container>
