@@ -82,6 +82,12 @@ export const { theme, css, styled, global, getCssString } = createCss({
     bp1: "@media (min-width: 520px)",
     bp2: "@media (min-width: 900px)",
   },
+  fonts: {
+    system: "system-ui",
+    untitled: "Untitled Sans, apple-system, sans-serif",
+    serif: `'Cardo', serif`,
+    mono: `'JetBrains Mono', monospace`,
+  },
 });
 
 export const darkTheme = theme("dark-theme", {

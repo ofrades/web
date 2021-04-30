@@ -19,7 +19,7 @@ const globalStyles = global({
 });
 
 const Container = styled("div", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   display: "grid",
   gridTemplateAreas: `
   'nav nav nav'

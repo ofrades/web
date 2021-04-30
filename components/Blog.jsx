@@ -6,7 +6,7 @@ const Container = styled("div", {
 });
 
 const Title = styled("h1", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   fontStyle: "italic",
   color: "$red500",
 });
@@ -28,20 +28,20 @@ const Box = styled("div", {
 });
 
 const PostDate = styled("p", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   fontSize: "0.7rem",
   fontStyle: "bold",
   color: "$yellow500",
 });
 
 const PostTitle = styled("h1", {
-  fontFamily: `'Cardo', sans-serif`,
+  fontFamily: "$serif",
   fontSize: "2rem",
   color: "$green500",
 });
 
 const PostDescription = styled("h3", {
-  fontFamily: `'Cardo', sans-serif`,
+  fontFamily: "$serif",
   fontStyle: "italic",
   color: "$blue500",
 });

@@ -8,7 +8,7 @@ const Container = styled("div", {
 });
 
 const TitleHero = styled("h1", {
-  fontFamily: `'Cardo', sans-serif`,
+  fontFamily: "serif",
   fontWeight: "700",
   color: "$grey200",
   fontSize: "4rem",

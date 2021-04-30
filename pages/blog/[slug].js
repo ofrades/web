@@ -7,16 +7,16 @@ import { styled } from "../../stitches.config";
 
 const Markdown = styled("div", {
   "& h1": {
-    fontFamily: `'Cardo', sans-serif`,
+    fontFamily: "$serif",
     color: "$red500",
     textAlign: "center",
   },
-  "& h2": { fontFamily: `'Cardo', sans-serif`, color: "$grey100" },
-  "& h3": { fontFamily: `'Cardo', sans-serif`, color: "$grey200" },
-  "& h4": { fontFamily: `'Cardo', sans-serif`, color: "$grey300" },
-  "& h5": { fontFamily: `'Cardo', sans-serif`, color: "$grey400" },
+  "& h2": { fontFamily: "$serif", color: "$grey100" },
+  "& h3": { fontFamily: "$serif", color: "$grey200" },
+  "& h4": { fontFamily: "$serif", color: "$grey300" },
+  "& h5": { fontFamily: "$serif", color: "$grey400" },
   "& h6": {
-    fontFamily: `'JetBrains Mono', monospace`,
+    fontFamily: "$mono",
     color: "$grey500",
     textAlign: "right",
   },

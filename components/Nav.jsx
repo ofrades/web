@@ -9,7 +9,7 @@ const Container = styled(Toolbar.Root, {
 });
 
 const Button = styled(Toolbar.Button, {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   fontWeight: "700",
   fontSize: "1.25rem",
   padding: "1rem",

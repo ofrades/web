@@ -5,7 +5,7 @@ const Container = styled("div", {
 });
 
 const Title = styled("h1", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   fontStyle: "italic",
   color: "$red500",
 });
@@ -13,12 +13,12 @@ const Title = styled("h1", {
 const Resume = styled("div", {});
 
 const Line = styled("h1", {
-  fontFamily: `'Cardo', sans-serif`,
+  fontFamily: "$serif",
   color: "$blue500",
 });
 
 const List = styled("ul", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   color: "$grey300",
 });
 

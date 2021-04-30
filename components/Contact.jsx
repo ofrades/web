@@ -5,7 +5,7 @@ const Container = styled("div", {
 });
 
 const Title = styled("h1", {
-  fontFamily: `'JetBrains Mono', monospace`,
+  fontFamily: "$mono",
   fontStyle: "italic",
   color: "$red500",
 });
@@ -31,7 +31,7 @@ const Button = styled("a", {
 });
 
 const Line = styled("h1", {
-  fontFamily: `'Cardo', sans-serif`,
+  fontFamily: "serif",
   color: "$blue500",
   padding: "1rem",
 });
